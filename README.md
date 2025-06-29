@@ -39,9 +39,10 @@ Welcome to **TaskFlow**, a lightweight and intuitive **Todo Application** that h
 
 ✅ Age Verification (index.html)
 
-<img width="1438" alt="Screenshot 2025-06-29 at 9 57 36 PM" src="https://github.com/user-attachments/assets/b2e8bd22-bdf6-4bb5-9f38-f803906ee0a9" />
+<img width="1440" alt="Screenshot 2025-06-29 at 11 12 59 PM" src="https://github.com/user-attachments/assets/4273a4f3-9dd8-4bc0-ac37-8e5ecfbac7b6" />
 
 
 📋 Task Dashboard (app.html)
 
-<img width="1440" alt="Screenshot 2025-06-29 at 9 58 57 PM" src="https://github.com/user-attachments/assets/6918d4d6-6298-43aa-83e5-1bef46c1d236" />
+<img width="1440" alt="Screenshot 2025-06-29 at 11 13 32 PM" src="https://github.com/user-attachments/assets/35f3a21d-e82a-47ec-87a2-13acd4f7caee" />
+
