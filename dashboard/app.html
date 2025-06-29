@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="user-info">
+                <img id="userAvatar" class="user-avatar" alt="User Avatar">
+                <div class="user-details">
+                    <h2 id="userName">Welcome!</h2>
+                    <p>Manage your tasks efficiently</p>
+                </div>
+            </div>
+            <button class="sign-out-btn" id="signOutBtn">Sign Out</button>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="task-input-section fade-in">
+            <h3>Add New Task</h3>
+            <form class="task-input-form" id="taskForm">
+                <div class="task-text-row">
+                    <input 
+                        type="text" 
+                        class="task-input" 
+                        id="taskInput" 
+                        placeholder="What needs to be done?"
+                        maxlength="200"
+                        required
+                    >
+                </div>
+                
+                <div class="datetime-toggle">
+                    <div class="toggle-checkbox" id="datetimeToggle"></div>
+                    <label for="datetimeToggle">Set due date and time</label>
+                </div>
+                
+                <div class="datetime-inputs" id="datetimeInputs">
+                    <input 
+                        type="date" 
+                        class="datetime-input" 
+                        id="dueDateInput"
+                        min=""
+                    >
+                    <input 
+                        type="time" 
+                        class="datetime-input" 
+                        id="dueTimeInput"
+                    >
+                </div>
+                
+                <button type="submit" class="add-task-btn" id="addTaskBtn">
+                    Add Task
+                </button>
+            </form>
+        </section>
+
+        <section class="stages-container" id="stagesContainer">
+            <div class="stage todo-stage fade-in">
+                <div class="stage-header">
+                    <div class="stage-title">
+                        📝 Todo
+                        <span class="stage-counter" id="todoCounter">0</span>
+                    </div>
+                </div>
+                <div class="tasks-list" id="todoTasks">
+                    <div class="empty-state">
+                        <p>No tasks yet. Add your first task above!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stage completed-stage fade-in">
+                <div class="stage-header">
+                    <div class="stage-title">
+                        ✅ Completed
+                        <span class="stage-counter" id="completedCounter">0</span>
+                    </div>
+                </div>
+                <div class="tasks-list" id="completedTasks">
+                    <div class="empty-state">
+                        <p>No completed tasks yet</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stage archived-stage fade-in">
+                <div class="stage-header">
+                    <div class="stage-title">
+                        📦 Archived
+                        <span class="stage-counter" id="archivedCounter">0</span>
+                    </div>
+                </div>
+                <div class="tasks-list" id="archivedTasks">
+                    <div class="empty-state">
+                        <p>No archived tasks yet</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
